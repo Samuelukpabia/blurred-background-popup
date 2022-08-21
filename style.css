@@ -1,0 +1,111 @@
+body{
+    margin: 0;
+}
+
+.background{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("IMG_0872.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: filter 0.5s;
+}
+
+.background h2{
+    color: red;
+    font-size: 60px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 4px rgb(243, 242, 242);
+
+}
+
+.background button.btn{
+    background-color: red;
+    padding: 10px 20px;
+    width: 200px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.active.background{
+    filter: blur(5px) brightness(.5);
+}
+
+.popup-window{
+    background-image: url("IMG_0870.JPG");
+    background-size: cover;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: red;
+    font-family: sans-serif;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgb(243, 242, 242);
+    opacity: 1;
+    transition: all .7s;
+}
+
+.popup-window h2{
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.popup-window input.input{
+    margin: 5px 0;
+    padding: 8px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.popup-window input.input::placeholder{
+    color: lightgray;
+}
+
+.popup-window button.popup-btn{
+    margin: 5px 0;
+    padding: 8px;
+    background-color: red;
+    cursor: pointer;
+}
+
+.popup-window i.fas{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: black;
+    cursor: pointer;
+}
+.popup-window i.fas:hover{
+   color: red;
+}
+
+.active.popup-window{
+    visibility: hidden;
+    opacity: 0;
+    top: 20%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
